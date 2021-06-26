@@ -38,6 +38,10 @@ Please follow the Init section before continuing. These instructions assume that
     # Optional: reduce the size of the database folder
     kraken2-build --db $DB --clean
     du -shc $DB # view final size of database
+    
+### Midas with Kalamari (Golden Kalamari)
+    kalamariToMidas.py -t $DB -d $SRC -ot ${you_mapfile_folder} -od {new_src_location}
+    build_midas_db.py {new_src_location} ${you_mapfile_folder} $MIDAS_DB_Location
 
 ### ColorID with Kalamari
 
